@@ -1,0 +1,10 @@
+{
+  "sample_id": 12,
+  "algorithm": "HS256",
+  "score": 100,
+  "grade": "A+",
+  "entropy_bits": 204,
+  "exploit_status": "HARDENED",
+  "timestamp": 1795361941,
+  "status": "VERIFIED"
+}
