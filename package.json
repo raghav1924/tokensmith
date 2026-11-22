@@ -1,0 +1,52 @@
+{
+  "name": "tokensmith",
+  "version": "1.0.0",
+  "description": "Developer-First JWT & JWKS Security Linter, Cryptographic Exploit Simulator, Secret Entropy Auditor & Bento Grid Studio. Author: Jatin Sharma (https://jatinsh.netlify.app/)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "tokensmith": "dist/cli.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "node /Users/jatinsharma/.local/bin/lib/node_modules/typescript/bin/tsc",
+    "prepublishOnly": "npm run build",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "start": "node dist/cli.js",
+    "studio": "node dist/cli.js studio",
+    "inspect": "node dist/cli.js inspect",
+    "audit": "node dist/cli.js audit",
+    "verify": "node dist/cli.js verify",
+    "attack": "node dist/cli.js attack",
+    "generate": "node dist/cli.js generate"
+  },
+  "keywords": [
+    "jwt",
+    "jwks",
+    "json-web-token",
+    "security-linter",
+    "exploit-simulator",
+    "alg-none",
+    "algorithm-confusion",
+    "shannon-entropy",
+    "cryptography",
+    "oauth2",
+    "bento-grid",
+    "web-studio",
+    "zero-dependencies",
+    "jatin-sharma"
+  ],
+  "author": "Jatin Sharma <raghavjatin245@gmail.com> (https://jatinsh.netlify.app/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raghav1924/tokensmith.git"
+  },
+  "bugs": {
+    "url": "https://github.com/raghav1924/tokensmith/issues"
+  },
+  "homepage": "https://github.com/raghav1924/tokensmith#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
